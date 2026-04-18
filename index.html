@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maison Doree - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">La Maison Doree</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Experience Culinary Excellence</h1>
+            <p class="fade-in delay-1">Where every dish tells a story of passion and tradition</p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="#reservation" class="btn btn-primary">Book a Table</a>
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Restaurant Interior</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 1998, La Maison Doree has been a beacon of culinary excellence in the heart of the city. Our chef, Antoine Moreau, brings over 25 years of experience from Michelin-starred kitchens across Europe.</p>
+                    <p>We believe in the art of slow cooking, using only the freshest locally-sourced ingredients to create dishes that honor tradition while embracing innovation.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50k+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-label">Signature Dishes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title center">Our Menu</h2>
+            <p class="section-subtitle center">Discover our carefully curated selection of dishes</p>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="starters">Starters</button>
+                <button class="menu-tab" data-tab="mains">Main Courses</button>
+                <button class="menu-tab" data-tab="desserts">Desserts</button>
+                <button class="menu-tab" data-tab="drinks">Drinks</button>
+            </div>
+            <div class="menu-content" id="menuContent">
+            </div>
+        </div>
+    </section>
+
+    <section class="specials" id="specials">
+        <div class="container">
+            <h2 class="section-title center">Today's Specials</h2>
+            <p class="section-subtitle center">Handpicked by our chef for today</p>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-image">
+                        <span>Truffle Risotto</span>
+                    </div>
+                    <div class="special-info">
+                        <h3>Black Truffle Risotto</h3>
+                        <p>Creamy Arborio rice with black truffle, parmesan, and wild mushrooms</p>
+                        <span class="price">$38</span>
+                    </div>
+                </div>
+                <div class="special-card">
+                    <div class="special-image">
+                        <span>Wagyu Steak</span>
+                    </div>
+                    <div class="special-info">
+                        <h3>A5 Wagyu Tenderloin</h3>
+                        <p>Japanese A5 grade wagyu with red wine reduction and seasonal vegetables</p>
+                        <span class="price">$85</span>
+                    </div>
+                </div>
+                <div class="special-card">
+                    <div class="special-image">
+                        <span>Lobster Thermidor</span>
+                    </div>
+                    <div class="special-info">
+                        <h3>Classic Lobster Thermidor</h3>
+                        <p>Whole Maine lobster with cognac cream, gruyere, and herb butter</p>
+                        <span class="price">$62</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title center">What Our Guests Say</h2>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial active">
+                    <div class="stars">★★★★★</div>
+                    <p>"An extraordinary dining experience. The flavors were incredible and the service was impeccable. Will definitely be returning!"</p>
+                    <span class="author">- Sarah Mitchell</span>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"The best fine dining experience in the city. Chef Antoine's tasting menu is a journey through culinary perfection."</p>
+                    <span class="author">- James Rodriguez</span>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"From the ambiance to the dessert, everything was absolutely perfect. A must-visit for any food lover."</p>
+                    <span class="author">- Emily Chen</span>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <h2 class="section-title center">Make a Reservation</h2>
+            <p class="section-subtitle center">Book your table for an unforgettable experience</p>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7+">7+ People</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select time</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="21:30">9:30 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any dietary requirements or special requests..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Reserve Now</button>
+            </form>
+            <div class="form-success" id="formSuccess">
+                <div class="success-icon">&#10003;</div>
+                <h3>Reservation Confirmed!</h3>
+                <p>Thank you for choosing La Maison Doree. We'll send a confirmation to your email shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title center">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><span>Dish 1</span></div>
+                <div class="gallery-item"><span>Dish 2</span></div>
+                <div class="gallery-item"><span>Interior</span></div>
+                <div class="gallery-item"><span>Dish 3</span></div>
+                <div class="gallery-item"><span>Chef</span></div>
+                <div class="gallery-item"><span>Dessert</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>La Maison Doree</h3>
+                    <p>Fine dining since 1998. Experience the art of French cuisine with a modern twist.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">ig</a>
+                        <a href="#" aria-label="Twitter">tw</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Gourmet Street</li>
+                        <li>New York, NY 10001</li>
+                        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                        <li><a href="mailto:info@lamaisondoree.com">info@lamaisondoree.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 5pm - 11pm</li>
+                        <li>Saturday: 12pm - 11pm</li>
+                        <li>Sunday: 12pm - 10pm</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Maison Doree. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
